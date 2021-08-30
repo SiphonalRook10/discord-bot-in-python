@@ -1,0 +1,46 @@
+# do pip install discord.py==1.7.3   in termenal
+import discord
+
+client = discord.Client()
+
+# do stuff......
+
+
+#run client
+client.run('enter token here')
+import discord
+
+
+client = discord.Client()
+
+@client.event
+async def on_ready():
+#do stufff
+	general_channel = client.get_channel(enter cannel key here) 
+
+
+	await general_channel.send('yo boys whats up')
+@client.event
+async def on_message(message):
+	general_channel = client.get_channel(enter cannel key here) 
+	if message.content == '!credits':
+		await general_channel.send('this bot was made by https://www.youtube.com/channel/UCtIZG9McQn8DhJO7AWjTjeA')	
+	
+
+
+ 
+
+@client.event
+async def disconnect():
+   	await general_channel.send('i am going to sleep!')
+
+# run the client
+client.run('enter token here')
+
+
+
+
+
+# help
+# example if message.content == 'what you want them to say':
+#		await general_channel.send('what you want the bot to say')
